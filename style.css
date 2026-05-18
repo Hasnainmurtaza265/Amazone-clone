@@ -1,0 +1,667 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #eaeded;
+}
+
+/* Base Navbar Styling */
+.navbar {
+    height: 60px;
+    background-color: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+/* White border on hover effect (Amazon Style) */
+.border {
+    border: 1px solid transparent;
+    padding: 8px 6px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.border:hover {
+    border: 1px solid white;
+}
+
+/* Amazon Logo */
+.nav-logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-image: url('https://pngimg.com/uploads/amazon/amazon_PNG11.png');
+    background-size: cover;
+    height: 30px;
+    width: 100px;
+    margin-top: 5px;
+}
+
+/* Address Box */
+.add-first {
+    color: #cccccc;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.add-second {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+.add-icon i {
+    font-size: 14px;
+    margin-right: 3px;
+}
+
+/* Search Bar Styling */
+.nav-search {
+    display: flex;
+    flex-grow: 1;
+    height: 40px;
+    border-radius: 4px;
+    margin: 0 15px;
+    overflow: hidden;
+}
+
+.nav-search:focus-within {
+    box-shadow: 0 0 0 2px #f3a847;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border: none;
+    border-right: 1px solid #cdcdcd;
+    font-size: 12px;
+    color: #555;
+    cursor: pointer;
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    padding-left: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #febd69;
+    color: #333333;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search-icon:hover {
+    background-color: #f3a847;
+}
+
+/* Language Dropdown */
+.nav-lang {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.us-flag {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg');
+    background-size: cover;
+    height: 14px;
+    width: 20px;
+}
+
+.lang-text {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.caret {
+    font-size: 10px;
+    color: #a7a7a7;
+}
+
+/* Sign In & Orders */
+.nav-first {
+    font-size: 12px;
+}
+
+.nav-second {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Cart Section */
+.nav-cart {
+    display: flex;
+    align-items: flex-end;
+}
+
+.cart-icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    left: 42%;
+    color: #f08804;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.nav-cart i {
+    font-size: 30px;
+}
+
+.cart-text {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+/* Bottom Sub-Navbar (Panel) */
+.panel {
+    height: 40px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.panel-all {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 15px;
+}
+
+.panel-ops {
+    display: flex;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+/* =========HERO SECTION========= */
+
+
+
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    background-color: #eaeded;
+    padding-bottom: 20px;
+}
+
+/* Orange Banner Container */
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    /* background: linear-gradient(to right, #e05a00, #ff7300, #ff9100); */
+    /* background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/FathersDay/FAD24_Homepage_DesktopHero_1x._CB435012574_.jpg'); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Slider Arrows */
+.arrow {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 40px;
+    color: #333;
+    cursor: pointer;
+    padding: 20px 10px;
+    border: 2px solid transparent;
+}
+
+.arrow:focus-within, .arrow:hover {
+    border: 2px solid #007185;
+    border-radius: 4px;
+}
+
+.left-arrow { left: 10px; }
+.right-arrow { right: 10px; }
+
+/* Banner Core Content Layout */
+.banner-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.banner-text {
+    color: white;
+    z-index: 2;
+    max-width: 40%;
+}
+
+.banner-text .sub-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.banner-text h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.banner-images {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Taake mockup image background me proper set ho */
+.main-hero-img {
+    height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply; /* Agli responsive design layering ke liye */
+}
+
+/* --- Cards Layout Section --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    position: relative;
+    top: -140px; /* Amazon style overlapping layer */
+    z-index: 5;
+}
+
+/* Common Card Style */
+.card {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 420px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #cc0c39; /* Heading text color */
+    color: #111;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.card-link {
+    color: #007185;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.card-link:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+/* Card Type 1: Single Image Formatting */
+.card-img-single {
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-img-single img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Card Type 2: 4-Grid Block System */
+.quad-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    height: 300px;
+}
+
+.quad-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: #111;
+}
+
+.quad-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 4px;
+}
+
+/* Card Type 3: Kitchen Customized Layout */
+.kitchen-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px;
+}
+
+.kitchen-main {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kitchen-main img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.kitchen-main span, .sub-item span {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.kitchen-subs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    height: 110px;
+}
+
+.sub-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-item img {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+}
+
+/* --- Hero Section Responsiveness --- */
+
+
+
+/* --- Hero Section Styling --- */
+.hero-section {
+    position: relative;
+    width: 100%;
+    background-color: #eaeded;
+    padding-bottom: 20px;
+}
+
+/* Banner Container with Live Amazon Image */
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 550px; /* Real desktop height for exact fade effect */
+    background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/FathersDay/FAD24_Homepage_DesktopHero_1x._CB435012574_.jpg');
+    background-size: cover;
+    background-position: center top;
+    display: flex;
+    align-items: flex-start; /* Alignment to keep text top-left */
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+/* Amazon's smooth gradient mask to blend banner with the body background */
+.banner-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, #eaeded 20%, transparent 100%);
+    pointer-events: none;
+}
+
+/* Slider Arrows */
+.arrow {
+    position: absolute;
+    top: 250px;
+    transform: translateY(-50%);
+    z-index: 10;
+    font-size: 45px;
+    color: #111;
+    cursor: pointer;
+    padding: 30px 15px;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow:focus-within, .arrow:hover {
+    border: 2px solid #007185;
+    border-radius: 4px;
+}
+
+.left-arrow { left: 20px; }
+.right-arrow { right: 20px; }
+
+/* Banner Core Content Text */
+.banner-content {
+    width: 100%;
+    padding: 65px 0 0 60px; /* Positioned exactly like screenshot */
+    z-index: 2;
+}
+
+.banner-text {
+    color: #111; /* Changed to dark color to match original text over image */
+    max-width: 450px;
+}
+
+.banner-text .sub-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.banner-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+}
+
+/* --- Cards Layout Section --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    position: relative;
+    top: -230px; /* Pushed up to overlay beautifully on the banner fade */
+    z-index: 5;
+}
+
+/* Common Card Style */
+.card {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 420px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.card-link {
+    color: #007185;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.card-link:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+/* Card Type 1: Single Image Formatting */
+.card-img-single {
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-img-single img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Card Type 2: 4-Grid Block System */
+.quad-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    height: 300px;
+}
+
+.quad-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: #111;
+}
+
+.quad-item img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 4px;
+}
+
+/* Card Type 3: Kitchen Customized Layout */
+.kitchen-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px;
+}
+
+.kitchen-main {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kitchen-main img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.kitchen-main span, .sub-item span {
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.kitchen-subs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    height: 110px;
+}
+
+.sub-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-item img {
+    width: 100%;
+    height: 75px;
+    object-fit: cover;
+}
+
+/* --- Hero Section Responsiveness --- */
+@media (max-width: 1100px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        top: -100px;
+    }
+    .banner-container {
+        height: 400px;
+    }
+    .banner-text h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 700px) {
+    .banner-container {
+        height: 250px;
+        background-position: right center; /* Mobile par image right area focus karegi */
+    }
+    .cards-grid {
+        grid-template-columns: 1fr;
+        top: 10px;
+        padding: 0 10px;
+    }
+    .banner-content {
+        padding: 30px 0 0 20px;
+    }
+    .banner-text h1 {
+        font-size: 26px;
+    }
+    .arrow {
+        display: none;
+    }
+}
