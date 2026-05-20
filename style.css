@@ -631,37 +631,6 @@ body {
     object-fit: cover;
 }
 
-/* --- Hero Section Responsiveness --- */
-@media (max-width: 1100px) {
-    .cards-grid {
-        grid-template-columns: repeat(2, 1fr);
-        top: -100px;
-    }
-    .banner-container {
-        height: 400px;
-    }
-    .banner-text h1 {
-        font-size: 38px;
-    }
-}
 
-@media (max-width: 700px) {
-    .banner-container {
-        height: 250px;
-        background-position: right center; /* Mobile par image right area focus karegi */
-    }
-    .cards-grid {
-        grid-template-columns: 1fr;
-        top: 10px;
-        padding: 0 10px;
-    }
-    .banner-content {
-        padding: 30px 0 0 20px;
-    }
-    .banner-text h1 {
-        font-size: 26px;
-    }
-    .arrow {
-        display: none;
-    }
-}
+
+

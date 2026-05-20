@@ -1,5 +1,5 @@
-
 @media (max-width: 700px) {
+
     /* Mobile screen par elements ko wrap krna aur search ko adjust krna */
     .navbar {
         flex-wrap: wrap;
@@ -7,26 +7,62 @@
         padding: 10px;
         gap: 10px;
     }
-    
+
     .nav-search {
-        order: 5; /* Search bar ko neeche lane k liye */
+        order: 5;
+        /* Search bar ko neeche lane k liye */
         margin: 5px 0 0 0;
         width: 100%;
     }
-    
+
     .nav-address {
-        display: none; /* Mobile par address aksar chupa hota hai */
+        display: none;
+        /* Mobile par address aksar chupa hota hai */
     }
 
     .panel-ops {
-        overflow-x: auto; /* Menu items swipe ho sakein agar screen choti ho */
+        overflow-x: auto;
+        /* Menu items swipe ho sakein agar screen choti ho */
         white-space: nowrap;
     }
+
     .panel-ops::-webkit-scrollbar {
-        display: none; /* Scrollbar hide krne k liye */
+        display: none;
+        /* Scrollbar hide krne k liye */
     }
-    
 
 
-   
+
+
+
+
+
+
+    /* ==========HERO SECTION========== */
+
+
+
+    .banner-container {
+        height: 250px;
+        background-position: right center;
+        /* Mobile par image right area focus karegi */
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        top: 10px;
+        padding: 0 10px;
+    }
+
+    .banner-content {
+        padding: 30px 0 0 20px;
+    }
+
+    .banner-text h1 {
+        font-size: 26px;
+    }
+
+    .arrow {
+        display: none;
+    }
 }

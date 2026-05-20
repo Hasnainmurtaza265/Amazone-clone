@@ -1,11 +1,35 @@
 @media (max-width: 1100px) {
     .cards-grid {
-        grid-template-columns: repeat(2, 1fr); /* 4 columns se 2 columns ho jayengi */
+        grid-template-columns: repeat(2, 1fr);
+        /* 4 columns se 2 columns ho jayengi */
         top: -50px;
     }
+
     .banner-container {
         height: 300px;
     }
+
+    .banner-text h1 {
+        font-size: 38px;
+    }
+
+
+
+
+
+
+
+    /* ===========HERO SECTION========= */
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        top: -100px;
+    }
+
+    .banner-container {
+        height: 400px;
+    }
+
     .banner-text h1 {
         font-size: 38px;
     }
