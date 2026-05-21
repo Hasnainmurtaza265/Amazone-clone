@@ -1,0 +1,18 @@
+@media (max-width: 500px) {
+    .footer-links-container {
+        grid-template-columns: 1fr; /* Mobile screens par 1 single column */
+        text-align: left;
+        padding: 30px 20px;
+    }
+    
+    .footer-selectors {
+        flex-direction: column; /* Dropdowns stack in list flow */
+        align-items: center;
+        width: 100%;
+    }
+    
+    .select-box {
+        width: 180px;
+        justify-content: center;
+    }
+}

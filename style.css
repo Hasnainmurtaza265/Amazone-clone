@@ -41,6 +41,8 @@ body {
 
 .logo {
     background-image: url('https://pngimg.com/uploads/amazon/amazon_PNG11.png');
+    /* background-image: url('./images/'); */
+
     background-size: cover;
     height: 30px;
     width: 100px;
@@ -250,13 +252,19 @@ body {
     border: 2px solid transparent;
 }
 
-.arrow:focus-within, .arrow:hover {
+.arrow:focus-within,
+.arrow:hover {
     border: 2px solid #007185;
     border-radius: 4px;
 }
 
-.left-arrow { left: 10px; }
-.right-arrow { right: 10px; }
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
 
 /* Banner Core Content Layout */
 .banner-content {
@@ -298,7 +306,8 @@ body {
 .main-hero-img {
     height: 100%;
     object-fit: contain;
-    mix-blend-mode: multiply; /* Agli responsive design layering ke liye */
+    mix-blend-mode: multiply;
+    /* Agli responsive design layering ke liye */
 }
 
 /* --- Cards Layout Section --- */
@@ -308,7 +317,8 @@ body {
     gap: 20px;
     padding: 0 20px;
     position: relative;
-    top: -140px; /* Amazon style overlapping layer */
+    top: -140px;
+    /* Amazon style overlapping layer */
     z-index: 5;
 }
 
@@ -320,13 +330,14 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 420px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .card h2 {
     font-size: 21px;
     font-weight: 700;
-    color: #cc0c39; /* Heading text color */
+    color: #cc0c39;
+    /* Heading text color */
     color: #111;
     margin-bottom: 10px;
     line-height: 1.2;
@@ -400,7 +411,8 @@ body {
     object-fit: cover;
 }
 
-.kitchen-main span, .sub-item span {
+.kitchen-main span,
+.sub-item span {
     font-size: 12px;
     margin-top: 2px;
 }
@@ -423,6 +435,32 @@ body {
     object-fit: cover;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* --- Hero Section Responsiveness --- */
 
 
@@ -439,12 +477,14 @@ body {
 .banner-container {
     position: relative;
     width: 100%;
-    height: 550px; /* Real desktop height for exact fade effect */
+    height: 550px;
+    /* Real desktop height for exact fade effect */
     background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/FathersDay/FAD24_Homepage_DesktopHero_1x._CB435012574_.jpg');
     background-size: cover;
     background-position: center top;
     display: flex;
-    align-items: flex-start; /* Alignment to keep text top-left */
+    align-items: flex-start;
+    /* Alignment to keep text top-left */
     justify-content: space-between;
     overflow: hidden;
 }
@@ -477,23 +517,31 @@ body {
     justify-content: center;
 }
 
-.arrow:focus-within, .arrow:hover {
+.arrow:focus-within,
+.arrow:hover {
     border: 2px solid #007185;
     border-radius: 4px;
 }
 
-.left-arrow { left: 20px; }
-.right-arrow { right: 20px; }
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
 
 /* Banner Core Content Text */
 .banner-content {
     width: 100%;
-    padding: 65px 0 0 60px; /* Positioned exactly like screenshot */
+    padding: 65px 0 0 60px;
+    /* Positioned exactly like screenshot */
     z-index: 2;
 }
 
 .banner-text {
-    color: #111; /* Changed to dark color to match original text over image */
+    color: #111;
+    /* Changed to dark color to match original text over image */
     max-width: 450px;
 }
 
@@ -517,7 +565,8 @@ body {
     gap: 20px;
     padding: 0 20px;
     position: relative;
-    top: -230px; /* Pushed up to overlay beautifully on the banner fade */
+    top: -230px;
+    /* Pushed up to overlay beautifully on the banner fade */
     z-index: 5;
 }
 
@@ -529,7 +578,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 420px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .card h2 {
@@ -608,7 +657,8 @@ body {
     object-fit: cover;
 }
 
-.kitchen-main span, .sub-item span {
+.kitchen-main span,
+.sub-item span {
     font-size: 12px;
     margin-top: 2px;
 }
@@ -633,4 +683,521 @@ body {
 
 
 
+/* ============BEST SELLER ========= */
+
+/* --- Product Sliders Container --- */
+.product-sliders-container {
+    padding: 0 20px;
+    margin-top: -210px;
+    /* Cards layer ke gap ko adjust karne ke liye balance scale */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Amazon main card format wrapper */
+.slider-row {
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.slider-row h2 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 15px;
+}
+
+/* Slider Relative wrapper for absolute arrow controls */
+.slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Products Track Carousel styling */
+.products-carousel {
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    /* Touch screens par touch swipe chalega */
+    scroll-behavior: smooth;
+    width: 100%;
+    padding: 10px 5px;
+}
+
+/* Hide scrollbar tracking lines across clean layouts */
+.products-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Single Item Scaling Layout */
+.product-item {
+    flex: 0 0 auto;
+    /* It prevents images from shrinking */
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.product-item img {
+    max-height: 100%;
+    max-width: 170px;
+    object-fit: contain;
+    /* Images compress nahi hongi, sharp rahengi */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/* Subtle Hover zoom effect like original platform details */
+.product-item img:hover {
+    transform: scale(1.03);
+}
+
+/* --- Carousel Navigation Buttons --- */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(250, 250, 250, 0.95);
+    border: 1px solid #d5d9d9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    height: 45px;
+    width: 45px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #111;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-btn:hover {
+    background-color: #f7fafa;
+    border-color: #a6a6a6;
+}
+
+.slider-btn:focus {
+    outline: 2px solid #007185;
+}
+
+/* Specific button position adjustments */
+.prev-btn {
+    left: -15px;
+}
+
+.next-btn {
+    right: -15px;
+}
+
+
+
+
+
+
+/* Purani line: top: -230px; ko badal kar 0 kar dein */
+.cards-grid {
+    position: relative;
+    top: 0px;
+    /* Ab yeh upar nahi chadhega */
+    z-index: 5;
+    margin-top: 30px;
+    /* baaki code same rahega */
+}
+
+/* Purani line: margin-top: -210px; ko badal kar normal margin kar dein */
+.product-sliders-container {
+    padding: 0 20px;
+    margin-top: 20px;
+    /* Ab yeh normal 20px ka gap rakhega */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Footer Styling --- */
+footer {
+    width: 100%;
+    background-color: #232f3e; /* Amazon dark blue panel color */
+    color: white;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Back to Top Bar */
+.back-to-top {
+    display: block;
+    width: 100%;
+    background-color: #37475a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.back-to-top:hover {
+    background-color: #485769;
+}
+
+/* Links Columns Structure */
+.footer-links-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.footer-col h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 14px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #DDD;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Special styling for arrow links */
+.see-more-link {
+    font-size: 12px !important;
+}
+
+/* Horizontal Rule Separation Style */
+.footer-links-container {
+    border-bottom: 1px solid #3a4553;
+}
+
+/* --- Footer Bottom Settings Bar --- */
+.footer-bottom-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 30px 20px;
+    background-color: #232f3e;
+}
+
+.footer-logo {
+    background-image: url('https://pngimg.com/uploads/amazon/amazon_PNG11.png');
+    background-size: cover;
+    height: 24px;
+    width: 76px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* Selectors Boxes System */
+.footer-selectors {
+    display: flex;
+    gap: 10px;
+}
+
+.select-box {
+    border: 1px solid #848688;
+    border-radius: 3px;
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #CCC;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.select-box:hover {
+    border-color: white;
+}
+
+.select-box i {
+    font-size: 12px;
+}
+
+.us-flag-small {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg');
+    background-size: cover;
+    height: 10px;
+    width: 15px;
+}
+
+/* --- Footer Responsiveness --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Pre-Footer Recommendation Section --- */
+.pre-footer-recommend {
+    width: 100%;
+    background-color: white;
+    padding: 35px 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 30px; /* Sliders se thoda gap rakhne ke liye */
+    display: flex;
+    justify-content: center;
+}
+
+.recommend-box {
+    max-width: 1200px;
+    width: 100%;
+    text-align: left; /* Screenshot ke mutabiq text left align rahega */
+}
+
+.rec-title {
+    font-size: 19px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.rec-sub {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+    font-style: italic; /* Screenshot me text halka sa italicized wrapper flow me hai */
+}
+
+/* --- Responsive Adjustments --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Sub-Footer Area Layout --- */
+.sub-footer-grid {
+    background-color: #131a22; /* Amazon's deepest black-blue tone */
+    padding: 40px 30px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Exact 7 vertical links tracks like screenshot */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #232f3e; /* Clear boundary split line */
+}
+
+.sub-footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Vertically pushes anchor tags below each other */
+}
+
+.sub-footer-col a {
+    text-decoration: none;
+    color: #999; /* Smooth grey links text */
+    font-size: 11px;
+    line-height: 1.3;
+}
+
+.sub-footer-col a strong {
+    color: #ddd; /* Titles inside links are brighter white */
+    font-weight: 500;
+}
+
+.sub-footer-col a span {
+    color: #999;
+}
+
+.sub-footer-col a:hover strong, 
+.sub-footer-col a:hover span {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* --- Legal Privacy & Copyright Section --- */
+.copyright-privacy-bar {
+    background-color: #131a22;
+    padding: 30px 20px 40px 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.policy-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.policy-links a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.policy-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright-text {
+    color: #999;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+/* --- Sub-Footer Dynamic Media Breakpoints --- */
 

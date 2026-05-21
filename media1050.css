@@ -1,0 +1,6 @@
+@media (max-width: 1050px) {
+    .sub-footer-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 Columns on standard tabs */
+        gap: 25px;
+    }
+}
