@@ -9,6 +9,43 @@ body {
     background-color: #eaeded;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Base Navbar Styling */
 .navbar {
     height: 60px;
@@ -18,6 +55,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
+    /* position: fixed; */
 }
 
 /* White border on hover effect (Amazon Style) */
@@ -193,6 +231,7 @@ body {
     align-items: center;
     padding-left: 15px;
     font-size: 14px;
+    /* position: fixed; */
 }
 
 .panel-all {
@@ -231,12 +270,18 @@ body {
     position: relative;
     width: 100%;
     height: 400px;
-    /* background: linear-gradient(to right, #e05a00, #ff7300, #ff9100); */
+
     /* background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/FathersDay/FAD24_Homepage_DesktopHero_1x._CB435012574_.jpg'); */
+    /* background-image: url("./images/fathersday.jpg"); */
+    /* background-image: url("images/fathersday.jpg"); */
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Slider Arrows */
@@ -721,7 +766,7 @@ body {
 .products-carousel {
     display: flex;
     gap: 25px;
-    overflow-x: auto;
+    overflow-x: hidden;
     /* Touch screens par touch swipe chalega */
     scroll-behavior: smooth;
     width: 100%;
@@ -736,6 +781,7 @@ body {
 /* Single Item Scaling Layout */
 .product-item {
     flex: 0 0 auto;
+    /* border: 2px solid black; */
     /* It prevents images from shrinking */
     height: 200px;
     display: flex;
@@ -879,7 +925,8 @@ body {
 /* --- Footer Styling --- */
 footer {
     width: 100%;
-    background-color: #232f3e; /* Amazon dark blue panel color */
+    background-color: #232f3e;
+    /* Amazon dark blue panel color */
     color: white;
     margin-top: 40px;
     font-size: 14px;
@@ -1053,7 +1100,8 @@ footer {
     padding: 35px 20px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    margin-top: 30px; /* Sliders se thoda gap rakhne ke liye */
+    margin-top: 30px;
+    /* Sliders se thoda gap rakhne ke liye */
     display: flex;
     justify-content: center;
 }
@@ -1061,7 +1109,8 @@ footer {
 .recommend-box {
     max-width: 1200px;
     width: 100%;
-    text-align: left; /* Screenshot ke mutabiq text left align rahega */
+    text-align: left;
+    /* Screenshot ke mutabiq text left align rahega */
 }
 
 .rec-title {
@@ -1076,7 +1125,8 @@ footer {
     font-size: 13px;
     color: #555;
     line-height: 1.4;
-    font-style: italic; /* Screenshot me text halka sa italicized wrapper flow me hai */
+    font-style: italic;
+    /* Screenshot me text halka sa italicized wrapper flow me hai */
 }
 
 /* --- Responsive Adjustments --- */
@@ -1130,31 +1180,37 @@ footer {
 
 /* --- Sub-Footer Area Layout --- */
 .sub-footer-grid {
-    background-color: #131a22; /* Amazon's deepest black-blue tone */
+    background-color: #131a22;
+    /* Amazon's deepest black-blue tone */
     padding: 40px 30px;
     display: grid;
-    grid-template-columns: repeat(7, 1fr); /* Exact 7 vertical links tracks like screenshot */
+    grid-template-columns: repeat(7, 1fr);
+    /* Exact 7 vertical links tracks like screenshot */
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    border-top: 1px solid #232f3e; /* Clear boundary split line */
+    border-top: 1px solid #232f3e;
+    /* Clear boundary split line */
 }
 
 .sub-footer-col {
     display: flex;
     flex-direction: column;
-    gap: 25px; /* Vertically pushes anchor tags below each other */
+    gap: 25px;
+    /* Vertically pushes anchor tags below each other */
 }
 
 .sub-footer-col a {
     text-decoration: none;
-    color: #999; /* Smooth grey links text */
+    color: #999;
+    /* Smooth grey links text */
     font-size: 11px;
     line-height: 1.3;
 }
 
 .sub-footer-col a strong {
-    color: #ddd; /* Titles inside links are brighter white */
+    color: #ddd;
+    /* Titles inside links are brighter white */
     font-weight: 500;
 }
 
@@ -1162,7 +1218,7 @@ footer {
     color: #999;
 }
 
-.sub-footer-col a:hover strong, 
+.sub-footer-col a:hover strong,
 .sub-footer-col a:hover span {
     text-decoration: underline;
     color: #fff;
@@ -1200,4 +1256,3 @@ footer {
 }
 
 /* --- Sub-Footer Dynamic Media Breakpoints --- */
-
