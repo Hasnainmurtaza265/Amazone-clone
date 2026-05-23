@@ -1,18 +1,68 @@
 @media (max-width: 500px) {
+    /* 📱 Mobile Phones ke liye Cards ka Ek ke niche Ek (1-Column) Layout */
+
+    .cards-grid {
+        grid-template-columns: 1fr !important;
+        /* 👈 Yeh 4 columns ko khatam kar ke sirf 1 column bana dega */
+        gap: 30px;
+        /* Cards ke darmiyan ka gap thoda kam kiya */
+        padding: 0 15px;
+        /* Screen ke edges se thodi space chorne k liye */
+        top: -30px;
+        /* Mobile screen par position balance karne k liye */
+        margin-top: 30px;
+    }
+
+    .card {
+        height: auto;
+        /* Mobile par content k mutabiq height auto rahegi */
+        /* min-height: 380px; */
+    }
+
+    /* Agar quad grid (4 small images wale cards) mobile par dab rahe hain, toh unhe bhi 2 columns me tight rakhein */
+    .quad-grid {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .footer-links-container {
-        grid-template-columns: 1fr; /* Mobile screens par 1 single column */
+        grid-template-columns: 1fr;
+        /* Mobile screens par 1 single column */
         text-align: left;
         padding: 30px 20px;
     }
-    
+
     .footer-selectors {
-        flex-direction: column; /* Dropdowns stack in list flow */
+        flex-direction: column;
+        /* Dropdowns stack in list flow */
         align-items: center;
         width: 100%;
     }
-    
+
     .select-box {
         width: 180px;
         justify-content: center;
     }
+
+
+    .product-sliders-container {
+        gap: 30px;
+    }
+
 }

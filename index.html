@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./media700.css">
     <link rel="stylesheet" href="./media800.css">
     <link rel="stylesheet" href="./media900.css">
+    <link rel="stylesheet" href="./media768.css">
     <script defer src="./app.js"></script>
 </head>
 
@@ -105,47 +106,162 @@
                 </div>
             </div>
 
-            <div class="nav-lang border">
+            <div class="nav-lang border" onmouseover="showLangMenu()" onmouseout="hideLangMenu()">
                 <div class="us-flag"></div>
                 <span class="lang-text">EN</span>
                 <i class="fa-solid fa-caret-down caret"></i>
+
+
+
+
+
+                <div class="lang-dropdown" id="langMenu">
+                    <div class="lang-arrow"></div>
+
+                    <h3>Change language</h3>
+
+                    <div class="lang-option">
+                        <input type="radio" id="en" name="language" checked>
+                        <label for="en">English - EN</label>
+                    </div>
+                    <div class="lang-option">
+                        <input type="radio" id="es" name="language">
+                        <label for="es">español - ES</label>
+                    </div>
+                    <div class="lang-option">
+                        <input type="radio" id="ur" name="language">
+                        <label for="ur">اردو - UR</label>
+                    </div>
+                    <div class="lang-option">
+                        <input type="radio" id="de" name="language">
+                        <label for="de">Deutsch - DE</label>
+                    </div>
+                    <div class="lang-option">
+                        <input type="radio" id="pt" name="language">
+                        <label for="pt">português - PT</label>
+                    </div>
+                    <div class="lang-option">
+                        <input type="radio" id="zh" name="language">
+                        <label for="zh">中文 (简体) - ZH</label>
+                    </div>
+
+                    <hr class="lang-divider">
+
+                    <h3>Change currency</h3>
+                    <div class="currency-section">
+                        <div class="lang-option">
+                            <input type="radio" id="pkr" name="currency" checked>
+                            <label for="pkr">PKR - Pakistani Rupee</label>
+                        </div>
+                        <div class="lang-option">
+                            <input type="radio" id="usd" name="currency">
+                            <label for="usd">$ - USD - US Dollar</label>
+                        </div>
+                        <a href="#" class="see-all-link">See all</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="nav-signin border">
+            <div class="nav-signin border" id="accountBtn" onmouseover="showMenu()" onmouseleave="hideMenu()">
                 <p class="nav-first">Hello, sign in</p>
                 <p class="nav-second">Account & Lists <i class="fa-solid fa-caret-down caret"></i></p>
             </div>
 
-            <div class="nav-orders border">
-                <p class="nav-first">Returns</p>
-                <p class="nav-second">& Orders</p>
-            </div>
 
-            <div class="nav-cart border">
-                <div class="cart-icon-container">
-                    <span class="cart-count">0</span>
-                    <i class="fa-solid fa-cart-shopping"></i>
+
+
+
+
+            <div class="account-dropdown" id="accountMenu">
+                <div class="dropdown-arrow"></div>
+
+                <div class="signin-section">
+                    <button class="dropdown-signin-btn">Sign in</button>
+                    <p class="new-customer">New customer? <a href="#">Start here.</a></p>
                 </div>
-                <span class="cart-text">Cart</span>
+
+                <hr class="dropdown-divider">
+
+                <div class="dropdown-content-grid">
+                    <div class="dropdown-col">
+                        <h4>Your Lists</h4>
+                        <a href="#">Create a List</a>
+                        <a href="#">Find a List or Registry</a>
+                    </div>
+
+                    <div class="dropdown-col">
+                        <h4>Your Account</h4>
+                        <a href="#">Account</a>
+                        <a href="#">Orders</a>
+                        <a href="#">Recommendations</a>
+                        <a href="#">Browsing History</a>
+                        <a href="#">Watchlist</a>
+                    </div>
+                </div>
             </div>
         </div>
 
 
-        <div class="panel">
-            <div class="panel-all border">
-                <i class="fa-solid fa-bars"></i>
-                All
-            </div>
-            <div class="panel-ops">
-                <p class="border">Today's Deals</p>
-                <p class="border">Gift Cards</p>
-                <p class="border">Sell</p>
-                <p class="border">Registry</p>
-                <p class="border">Prime Video</p>
-                <p class="border">Customer Service</p>
-            </div>
-        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="panel">
+        <div class="panel-all border">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panel-ops">
+            <p class="border">Today's Deals</p>
+            <p class="border">Gift Cards</p>
+            <p class="border">Sell</p>
+            <p class="border">Registry</p>
+            <p class="border">Prime Video</p>
+            <p class="border">Customer Service</p>
+        </div>
+    </div>
+
+
+
 
 
 
@@ -158,7 +274,7 @@
     <main class="hero-section">
         <div class="banner-container" id="heroimg"
             style="background-image: url('images/fathersday.jpg'); background-size: cover; background-position: center;">
-            <div class="arrow left-arrow"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="arrow left-arrow" onclick="previmg()"><i class="fa-solid fa-chevron-left"></i></div>
 
             <div class="banner-content">
                 <div class="banner-text">
@@ -167,7 +283,7 @@
                 </div>
             </div>
 
-            <div class="arrow right-arrow" onclick="heroimg()"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="arrow right-arrow" onclick="changeimg()"><i class="fa-solid fa-chevron-right"></i></div>
         </div>
 
 

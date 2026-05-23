@@ -1,0 +1,109 @@
+
+/* --- Mobile aur Tablet Responsive Code --- */
+@media (max-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 1. Main Hero Cards Grid ki overlapping khatam karna */
+    .cards-grid {
+        position: static;
+        /* top: -140px ka asar khatam karne ke liye */
+        margin-top: -50px;
+        /* Choti screen par overlapping thodi kam karte hain */
+        grid-template-columns: repeat(2, 1fr);
+        /* 4 columns ki jagah 2 columns */
+        gap: 15px;
+        padding: 0 15px;
+        z-index: 5;
+    }
+
+    /* 2. Product Slider Container (Jo niche chhup raha tha) */
+    .slider-wrapper {
+        margin-top: 20px;
+        /* Is se upar wale cards se fasla ban jayega */
+        position: relative;
+        z-index: 10;
+        /* Isko upar lane ke liye taake peeche na chhupe */
+        width: 100%;
+    }
+
+    /* 3. Products Carousel track par Side-Scroll (Horizontal) chalu karna */
+    .products-carousel {
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        /* Is se mobile par finger se swipe/scroll hoga */
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        /* iOS/Safari me smooth scroll ke liye */
+        padding-bottom: 10px;
+        /* Scrollbar ke liye thodi jagah */
+    }
+
+    /* Hide standard scrollbar for clean look (Optional) */
+    .products-carousel::-webkit-scrollbar {
+        height: 4px;
+        /* Bilkul patli scrollbar */
+    }
+
+    .products-carousel::-webkit-scrollbar-thumb {
+        background: #999;
+        border-radius: 10px;
+    }
+
+
+    /* 4. Individual Product Cards ka size fixed rakhna taake scroll bar chalay */
+    .product-card-item {
+        flex: 0 0 160px;
+        /* Is se card chota nahi hoga balki side par scroll hoga */
+        scroll-snap-align: start;
+    }
+
+    /* Choti screen par arrows ko chhupa dete hain kyunki wahan finger swipe chalta hai */
+    .slider-btn {
+        display: none !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

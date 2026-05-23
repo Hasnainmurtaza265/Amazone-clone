@@ -360,9 +360,12 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    max-width: 100%;
     padding: 0 20px;
     position: relative;
-    top: -140px;
+    top: -20px;
+    max-width: 1200px;
+    margin: 0 auto;
     /* Amazon style overlapping layer */
     z-index: 5;
 }
@@ -376,6 +379,7 @@ body {
     justify-content: space-between;
     height: 420px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .card h2 {
@@ -432,8 +436,9 @@ body {
 .quad-item img {
     width: 100%;
     height: 100px;
-    object-fit: cover;
+    /* object-fit: cover; */
     margin-bottom: 4px;
+    object-fit: cover;
 }
 
 /* Card Type 3: Kitchen Customized Layout */
@@ -446,6 +451,7 @@ body {
 
 .kitchen-main {
     height: 180px;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
 }
@@ -1256,3 +1262,321 @@ footer {
 }
 
 /* --- Sub-Footer Dynamic Media Breakpoints --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 🎁 READY TO USE AMAZON HOVER BOX 🎁 */
+.account-dropdown {
+    position: absolute;
+    top: 45px;
+    right: 0px;
+    width: 450px;
+    /* overflow: hidden; */
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 22px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    /* Layout ko kharab kiye bina sab ke upar tairay ga */
+    text-align: left;
+    color: #111;
+    display: none;
+    /* Shuru me hidden rahega */
+}
+
+/* Dropdown ka top white arrow */
+.dropdown-arrow {
+    position: absolute;
+    top: -10px;
+    right: 45px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+}
+
+/* Sign-in Section Inside Box */
+.signin-section {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.dropdown-signin-btn {
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+    border: 1px solid #a88734;
+    border-radius: 3px;
+    width: 200px;
+    padding: 7px 0;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #111;
+}
+
+.dropdown-signin-btn:hover {
+    background: linear-gradient(to bottom, #f5d78e, #eeb933);
+}
+
+.new-customer {
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+.new-customer a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.new-customer a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-divider {
+    border: 0;
+    border-top: 1px solid #e7e7e7;
+    margin: 10px 0;
+}
+
+/* 2 Columns Grid Layout */
+.dropdown-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.dropdown-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-col h4 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.dropdown-col a {
+    font-size: 11.5px;
+    color: #444;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.dropdown-col a:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+/* JS toggle karne ke liye active class */
+.active-menu {
+    display: block !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Naya Language Box Code */
+.lang-dropdown {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 240px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 18px 15px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: left;
+    color: #111111;
+    display: none;
+}
+
+.lang-arrow {
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+}
+
+.lang-dropdown h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 12px;
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.lang-option input[type="radio"] {
+    cursor: pointer;
+    accent-color: #e47911;
+}
+
+.lang-option label {
+    cursor: pointer;
+    color: #333;
+}
+
+.lang-option:hover label {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+.lang-divider {
+    border: 0;
+    border-top: 1px solid #e7e7e7;
+    margin: 14px 0;
+}
+
+.see-all-link {
+    display: inline-block;
+    font-size: 12px;
+    color: #007185;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: 22px;
+}
+
+.see-all-link:hover {
+    color: #c45500;
+    text-decoration: underline;
+}
+
+.active-lang-menu {
+    display: block !important;
+}
