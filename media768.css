@@ -143,4 +143,94 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+    .product-sliders-container {
+        padding: 0 15px !important;
+        margin-top: 40px !important; 
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .slider-row {
+        background-color: white !important;
+        padding: 15px !important;
+        margin-top: 20px !important; 
+        margin-bottom: 10px !important;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    /* Heading configuration */
+    .slider-row h2 {
+        font-size: 18px !important;
+        margin-bottom: 12px !important;
+        line-height: 1.3 !important;
+        color: #111 !important;
+    }
+
+    .slider-wrapper {
+        position: relative !important;
+        display: flex !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    /* 4. Products Horizontal Scroll Track */
+    .products-carousel {
+        display: flex !important;
+        gap: 15px !important;
+        overflow-x: auto !important; 
+        overflow-y: hidden !important;
+        scroll-behavior: smooth !important;
+        width: 100% !important;
+        padding: 10px 0 !important;
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    .products-carousel::-webkit-scrollbar {
+        height: 4px !important; 
+    }
+    
+    .products-carousel::-webkit-scrollbar-thumb {
+        background-color: #cccccc !important;
+        border-radius: 4px !important;
+    }
+
+    /* 5. Carousel Items Scale Control */
+    .product-item {
+        flex: 0 0 auto !important; 
+        height: 140px !important;   
+        width: 120px !important;   
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .product-item img {
+        max-height: 100% !important;
+        max-width: 100% !important;
+        object-fit: contain !important; 
+    }
+
+    .slider-btn {
+        display: none !important; 
+    }
+
+
+
 }
