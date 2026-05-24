@@ -78,8 +78,9 @@ body {
 }
 
 .logo {
-    background-image: url('https://pngimg.com/uploads/amazon/amazon_PNG11.png');
-    /* background-image: url('./images/'); */
+    /* background-image: url('https://pngimg.com/uploads/amazon/amazon_PNG11.png'); */
+
+    background-image: url('./images/amazon_PNG11.png');
 
     background-size: cover;
     height: 30px;
