@@ -1,7 +1,5 @@
-/* --- Media Queries for Full Responsiveness --- */
 @media (max-width: 900px) {
 
-    /* Choti screens par language aur orders ko hide krna */
     .nav-lang,
     .nav-orders {
         display: none;
@@ -10,7 +8,6 @@
 
     .product-sliders-container {
         margin-top: -80px;
-        /* Layout balancing shift */
     }
 
 }

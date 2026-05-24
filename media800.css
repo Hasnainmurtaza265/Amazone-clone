@@ -1,12 +1,12 @@
 @media (max-width: 800px) {
     .footer-links-container {
-        grid-template-columns: repeat(2, 1fr); /* 4 columns se 2 columns ho jayengi tablet par */
+        grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         padding: 30px 40px;
     }
     
     .footer-bottom-bar {
-        flex-direction: column; /* Links aur selector line vertically centered stack honge */
+        flex-direction: column;
         gap: 20px;
     }
 }

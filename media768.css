@@ -3,6 +3,83 @@
 @media (max-width: 768px) {
 
 
+ /* 1. Main Grid Layout Control */
+    .cards-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important; /* Ek line me hamesha 1 hi card aayega */
+        gap: 30px !important;                 /* Do bade sections ke darmiyan 30px ka solid gap */
+        padding: 15px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        position: relative !important;
+        top: 0 !important;                    /* Kisi bhi kism ka negative overlap mobile par khatam */
+        margin-top: 25px !important;
+    }
+
+    /* 2. Global Card Container Fix */
+    .card {
+        background-color: white !important;
+        padding: 20px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start !important; /* Content ko upar se sequence me rakhega */
+        
+        /* 🔥 SABSE ZAROORI LINE 🔥 */
+        height: auto !important;               /* Fixed height bilkul khatam, dabba content ke mutabiq khulega */
+        min-height: 450px !important;          /* Kam se kam unchani fix rakhi hai safely */
+        
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+        box-sizing: border-box !important;
+        margin-bottom: 10px !important;        /* Agle dhabbe se pehle safety margin */
+    }
+
+    /* 3. 4-Images Grid Block Fix (Watches, Fashion, Home, Grilling) */
+    .quad-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* 2 columns perfect hain */
+        gap: 15px 12px !important;             /* Rows ke darmiyan extra spacing taake text na takraye */
+        height: auto !important;               /* Fixed 300px height ko auto kiya */
+        margin-bottom: 15px !important;
+    }
+
+    .quad-item {
+        display: flex !important;
+        flex-direction: column !important;
+        height: auto !important;
+    }
+
+    .quad-item img {
+        width: 100% !important;
+        height: 110px !important;              /* Images ka scale mobile par clean rahega */
+        object-fit: cover !important;
+        margin-bottom: 6px !important;
+    }
+
+    .quad-item span {
+        font-size: 12px !important;
+        line-height: 1.3 !important;
+        color: #111 !important;
+    }
+
+    /* 4. Single Image Card Fix (Gaming Console) */
+    .card-img-single {
+        height: 260px !important;
+        width: 100% !important;
+        margin-bottom: 15px !important;
+    }
+
+    .card-img-single img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    .card-link {
+        display: inline-block !important;
+        margin-top: auto !important;          
+        padding-top: 15px !important;       
+        font-size: 13px !important;
+    }
 
 
 
@@ -16,60 +93,33 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /* 1. Main Hero Cards Grid ki overlapping khatam karna */
     .cards-grid {
         position: static;
-        /* top: -140px ka asar khatam karne ke liye */
         margin-top: -50px;
-        /* Choti screen par overlapping thodi kam karte hain */
         grid-template-columns: repeat(2, 1fr);
-        /* 4 columns ki jagah 2 columns */
         gap: 15px;
         padding: 0 15px;
         z-index: 5;
     }
 
-    /* 2. Product Slider Container (Jo niche chhup raha tha) */
     .slider-wrapper {
         margin-top: 20px;
-        /* Is se upar wale cards se fasla ban jayega */
         position: relative;
         z-index: 10;
-        /* Isko upar lane ke liye taake peeche na chhupe */
         width: 100%;
     }
 
-    /* 3. Products Carousel track par Side-Scroll (Horizontal) chalu karna */
     .products-carousel {
         display: flex;
         gap: 15px;
         overflow-x: auto;
-        /* Is se mobile par finger se swipe/scroll hoga */
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        /* iOS/Safari me smooth scroll ke liye */
         padding-bottom: 10px;
-        /* Scrollbar ke liye thodi jagah */
     }
 
-    /* Hide standard scrollbar for clean look (Optional) */
     .products-carousel::-webkit-scrollbar {
         height: 4px;
-        /* Bilkul patli scrollbar */
     }
 
     .products-carousel::-webkit-scrollbar-thumb {
@@ -78,27 +128,14 @@
     }
 
 
-    /* 4. Individual Product Cards ka size fixed rakhna taake scroll bar chalay */
     .product-card-item {
         flex: 0 0 160px;
-        /* Is se card chota nahi hoga balki side par scroll hoga */
         scroll-snap-align: start;
     }
 
-    /* Choti screen par arrows ko chhupa dete hain kyunki wahan finger swipe chalta hai */
     .slider-btn {
         display: none !important;
     }
-
-
-
-
-
-
-
-
-
-
 
 
 

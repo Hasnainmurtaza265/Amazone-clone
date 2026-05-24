@@ -98,23 +98,12 @@
     }
 
     .sub-footer-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 Columns on mobile rotation */
+        grid-template-columns: repeat(2, 1fr); 
         padding: 30px 15px;
     }
     .policy-links {
         gap: 10px;
     }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

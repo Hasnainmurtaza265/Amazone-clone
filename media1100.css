@@ -1,7 +1,6 @@
 @media (max-width: 1100px) {
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
-        /* 4 columns se 2 columns ho jayengi */
         top: -50px;
     }
 
@@ -12,10 +11,6 @@
     .banner-text h1 {
         font-size: 38px;
     }
-
-
-
-
 
 
 

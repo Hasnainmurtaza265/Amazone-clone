@@ -13,39 +13,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Base Navbar Styling */
 .navbar {
     height: 60px;
@@ -55,7 +22,6 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-    /* position: fixed; */
 }
 
 /* White border on hover effect (Amazon Style) */
@@ -78,7 +44,6 @@ body {
 }
 
 .logo {
-    /* background-image: url('https://pngimg.com/uploads/amazon/amazon_PNG11.png'); */
 
     background-image: url('./images/amazon_PNG11.png');
 
@@ -232,7 +197,6 @@ body {
     align-items: center;
     padding-left: 15px;
     font-size: 14px;
-    /* position: fixed; */
 }
 
 .panel-all {
@@ -272,9 +236,6 @@ body {
     width: 100%;
     height: 400px;
 
-    /* background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/FathersDay/FAD24_Homepage_DesktopHero_1x._CB435012574_.jpg'); */
-    /* background-image: url("./images/fathersday.jpg"); */
-    /* background-image: url("images/fathersday.jpg"); */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -348,12 +309,10 @@ body {
     align-items: center;
 }
 
-/* Taake mockup image background me proper set ho */
 .main-hero-img {
     height: 100%;
     object-fit: contain;
     mix-blend-mode: multiply;
-    /* Agli responsive design layering ke liye */
 }
 
 /* --- Cards Layout Section --- */
@@ -367,7 +326,6 @@ body {
     top: -20px;
     max-width: 1200px;
     margin: 0 auto;
-    /* Amazon style overlapping layer */
     z-index: 5;
 }
 
@@ -387,7 +345,6 @@ body {
     font-size: 21px;
     font-weight: 700;
     color: #cc0c39;
-    /* Heading text color */
     color: #111;
     margin-bottom: 10px;
     line-height: 1.2;
@@ -437,7 +394,6 @@ body {
 .quad-item img {
     width: 100%;
     height: 100px;
-    /* object-fit: cover; */
     margin-bottom: 4px;
     object-fit: cover;
 }
@@ -452,7 +408,6 @@ body {
 
 .kitchen-main {
     height: 180px;
-    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
 }
@@ -498,25 +453,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* --- Hero Section Responsiveness --- */
-
-
-
 /* --- Hero Section Styling --- */
 .hero-section {
     position: relative;
@@ -530,18 +466,15 @@ body {
     position: relative;
     width: 100%;
     height: 550px;
-    /* Real desktop height for exact fade effect */
     background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/FathersDay/FAD24_Homepage_DesktopHero_1x._CB435012574_.jpg');
     background-size: cover;
     background-position: center top;
     display: flex;
     align-items: flex-start;
-    /* Alignment to keep text top-left */
     justify-content: space-between;
     overflow: hidden;
 }
 
-/* Amazon's smooth gradient mask to blend banner with the body background */
 .banner-container::after {
     content: "";
     position: absolute;
@@ -587,13 +520,11 @@ body {
 .banner-content {
     width: 100%;
     padding: 65px 0 0 60px;
-    /* Positioned exactly like screenshot */
     z-index: 2;
 }
 
 .banner-text {
     color: #111;
-    /* Changed to dark color to match original text over image */
     max-width: 450px;
 }
 
@@ -618,7 +549,6 @@ body {
     padding: 0 20px;
     position: relative;
     top: -230px;
-    /* Pushed up to overlay beautifully on the banner fade */
     z-index: 5;
 }
 
@@ -741,7 +671,6 @@ body {
 .product-sliders-container {
     padding: 0 20px;
     margin-top: -210px;
-    /* Cards layer ke gap ko adjust karne ke liye balance scale */
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -762,7 +691,6 @@ body {
     margin-bottom: 15px;
 }
 
-/* Slider Relative wrapper for absolute arrow controls */
 .slider-wrapper {
     position: relative;
     display: flex;
@@ -774,13 +702,11 @@ body {
     display: flex;
     gap: 25px;
     overflow-x: hidden;
-    /* Touch screens par touch swipe chalega */
     scroll-behavior: smooth;
     width: 100%;
     padding: 10px 5px;
 }
 
-/* Hide scrollbar tracking lines across clean layouts */
 .products-carousel::-webkit-scrollbar {
     display: none;
 }
@@ -788,8 +714,6 @@ body {
 /* Single Item Scaling Layout */
 .product-item {
     flex: 0 0 auto;
-    /* border: 2px solid black; */
-    /* It prevents images from shrinking */
     height: 200px;
     display: flex;
     align-items: center;
@@ -801,7 +725,6 @@ body {
     max-height: 100%;
     max-width: 170px;
     object-fit: contain;
-    /* Images compress nahi hongi, sharp rahengi */
     cursor: pointer;
     transition: transform 0.2s ease;
 }
@@ -854,69 +777,20 @@ body {
 
 
 
-/* Purani line: top: -230px; ko badal kar 0 kar dein */
 .cards-grid {
     position: relative;
     top: 0px;
-    /* Ab yeh upar nahi chadhega */
     z-index: 5;
     margin-top: 30px;
-    /* baaki code same rahega */
 }
 
-/* Purani line: margin-top: -210px; ko badal kar normal margin kar dein */
 .product-sliders-container {
     padding: 0 20px;
     margin-top: 20px;
-    /* Ab yeh normal 20px ka gap rakhega */
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -993,7 +867,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Special styling for arrow links */
 .see-more-link {
     font-size: 12px !important;
 }
@@ -1056,45 +929,6 @@ footer {
     width: 15px;
 }
 
-/* --- Footer Responsiveness --- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1108,7 +942,6 @@ footer {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     margin-top: 30px;
-    /* Sliders se thoda gap rakhne ke liye */
     display: flex;
     justify-content: center;
 }
@@ -1117,7 +950,6 @@ footer {
     max-width: 1200px;
     width: 100%;
     text-align: left;
-    /* Screenshot ke mutabiq text left align rahega */
 }
 
 .rec-title {
@@ -1133,42 +965,7 @@ footer {
     color: #555;
     line-height: 1.4;
     font-style: italic;
-    /* Screenshot me text halka sa italicized wrapper flow me hai */
 }
-
-/* --- Responsive Adjustments --- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1188,23 +985,19 @@ footer {
 /* --- Sub-Footer Area Layout --- */
 .sub-footer-grid {
     background-color: #131a22;
-    /* Amazon's deepest black-blue tone */
     padding: 40px 30px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    /* Exact 7 vertical links tracks like screenshot */
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
     border-top: 1px solid #232f3e;
-    /* Clear boundary split line */
 }
 
 .sub-footer-col {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    /* Vertically pushes anchor tags below each other */
 }
 
 .sub-footer-col a {
@@ -1217,7 +1010,6 @@ footer {
 
 .sub-footer-col a strong {
     color: #ddd;
-    /* Titles inside links are brighter white */
     font-weight: 500;
 }
 
@@ -1262,7 +1054,6 @@ footer {
     margin-top: 5px;
 }
 
-/* --- Sub-Footer Dynamic Media Breakpoints --- */
 
 
 
@@ -1279,108 +1070,7 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 🎁 READY TO USE AMAZON HOVER BOX 🎁 */
+/* =========AMAZON BOX HOVER========== */
 .account-dropdown {
     position: absolute;
     top: 45px;
@@ -1581,3 +1271,44 @@ footer {
 .active-lang-menu {
     display: block !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
